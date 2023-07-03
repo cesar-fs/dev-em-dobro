@@ -1,0 +1,77 @@
+html{
+    background: url(./src/images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    color: #fff;
+    max-width: 1475px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+   
+
+
+.header{
+    grid-area: header;
+    background: url(./src/images/logo.svg) no-repeat;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "container-desktop descricao" ;
+}
+
+.container .descricao {
+    grid-area: descricao;
+    grid-template-rows: 1 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: left;
+    text-align: left;
+}
+
+.container .descricao p{
+    font-size: 0.8rem;
+    padding: 100px;
+}
+
+.container .descricao a{
+    background: white;
+    transition: 0.3s;
+    text-align: center;
+    padding: 10px;
+}
+
+.container .descricao a.btn-register{
+    border-radius: 50px;
+
+}
+.container .descricao a:hover{
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-end;
+    text-align: end;
+    padding: 100px 0;
+}
+
+.footer .social i{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.footer .social a{
+    margin: 10px;
+    color: #fff;
+}
+
+.footer .social a:hover{
+    color:  hsl(300, 69%, 71%);
+}
